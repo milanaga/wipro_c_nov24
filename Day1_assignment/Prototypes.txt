@@ -1,0 +1,29 @@
+ Add the prototypes of the I/P functions which the trainer gave on day1.
+ 
+scanf:
+int scanf(const char *format, ...);
+
+gets:
+char *gets(char *str);
+
+fgets:
+char *fgets(char *str, int n, FILE *stream);
+
+getc:
+int getc(FILE *stream);
+
+getchar:
+int getchar(void);
+
+File Input Functions
+fscanf:
+int fscanf(FILE *stream, const char *format, ...);
+
+fread:
+size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);
+
+fgets (also used for file input):
+char *fgets(char *str, int n, FILE *stream);
+
+fgetc:
+int fgetc(FILE *stream);
