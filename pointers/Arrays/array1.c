@@ -1,5 +1,5 @@
 // Find biggest and smallest elements of in an array
-/*#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argCount, char *args[])
@@ -21,34 +21,5 @@ int main(int argCount, char *args[])
             bigNumber = array[i];
     }
     printf("Small Number = %.2lf,  Big Number = %.2lf", smallNumber, bigNumber);
-    return 0;
-}*/
-
-#include <stdio.h>
-
-int main() {
-    int n;
-    int smallNumber , bigNumber;
-
-    printf("Enter the size of the array: ");
-    scanf("%d", &n);
-
-    float array[n];
-
-    printf("Enter %d elements of type float:\n", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%lf", &array[i]);
-    }
-    smallNumber = bigNumber = array[0];
-    for (int i = 1; i < n; i++)
-    {
-        if (smallNumber > array[i])
-            smallNumber = array[i];
-        if (bigNumber < array[i])
-            bigNumber = array[i];
-    }
-    printf("Small Number = %.2lf,  Big Number = %.2lf", smallNumber, bigNumber);
-   
-
     return 0;
 }
